@@ -4,9 +4,9 @@
 experiment_name: test_run
 
 # files to specify training, validation and test basins (relative to code root or absolute path)
-train_basin_file: /content/drive/MyDrive/research/PML_LSTM/examples/run/1_basin.txt
-validation_basin_file: /content/drive/MyDrive/research/PML_LSTM/examples/run/1_basin.txt
-test_basin_file: /content/drive/MyDrive/research/PML_LSTM/examples/run/1_basin.txt
+train_basin_file: /content/rancho_pml_nh/run/1_basin.txt
+validation_basin_file: /content/rancho_pml_nh/run/1_basin.txt
+test_basin_file: /content/rancho_pml_nh/run/1_basin.txt
 
 train_start_date: "01/10/2006"
 # training, validation and test time periods (format = 'dd/mm/yyyy')
@@ -25,7 +25,7 @@ device: cuda:0
 validate_every: 3
 
 # specify how many random basins to use for validation
-validate_n_random_basins: 1
+validate_n_random_basins: 0
 
 # specify which metrics to calculate during validation (see neuralhydrology.evaluation.metrics)
 # this can either be a list or a dictionary. If a dictionary is used, the inner keys must match the name of the
@@ -108,7 +108,7 @@ save_weights_every: 1
 dataset: generic
 
 # Path to data set root
-data_dir: /content/drive/MyDrive/research/PML_LSTM/data/test_generic
+data_dir: /content/rancho_pml_nh/data/test_generic
 
 # Forcing product [daymet, maurer, maurer_extended, nldas, nldas_extended, nldas_hourly]
 # can be either a list of forcings or a single forcing product
