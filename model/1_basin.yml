@@ -124,6 +124,7 @@ dynamic_inputs:
   - tmin
   - vpdmax
   - vpdmin
+  - ETmodis
 
 # which columns to use as target
 target_variables:
